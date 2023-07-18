@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="EmailForm.css" />
+  </head>
+  <body>
+    <h1>Email Contact Form</h1>
+
+    <form novalidate onsubmit="return false">
+      <p>
+        <label for="email">
+          <span>Please enter an email</span>
+          <input type="text" placeholder="Enter you email address" id="email" />
+        </label>
+      </p>
+      <br /><br />
+      <p>
+        <span>Please select your country of origin</span>
+        <select id="country">
+          <option disabled selected value>--Select a Country--</option>
+          <option value="America">America</option>
+          <option value="Russia">Russia</option>
+          <option value="China">China</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </p>
+      <br /><br />
+
+      <p>
+        <span>Please enter your zipcode</span>
+        <input
+          type="number"
+          placeholder="Please enter your zipcode"
+          id="zipcode"
+        />
+      </p>
+      <br /><br />
+      <p>
+        <span>Please enter a password</span>
+        <input type="password" placeholder="Enter password" id="password" />
+      </p>
+
+      <button onclick="sendContact();">Submit Form</button>
+    </form>
+
+    <script src="EmailForm.js" defer></script>
+  </body>
+</html>
